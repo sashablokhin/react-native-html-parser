@@ -46,7 +46,7 @@ function parse(source,defaultNSMapCopy,entityMap,domBuilder,errorHandler){
 			return String.fromCharCode(code);
 		}
 	}
-	function entityReplacer(a){
+	function entityReplacer(a){/*
 		var k = a.slice(1,-1);
 		if(k in entityMap){
 			return entityMap[k]; 
@@ -55,7 +55,8 @@ function parse(source,defaultNSMapCopy,entityMap,domBuilder,errorHandler){
 		}else{
 			errorHandler.error('entity not found:'+a);
 			return a;
-		}
+		}*/
+		return a;
 	}
 	function appendText(end){//has some bugs
 		if(end>start){
